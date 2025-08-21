@@ -20,5 +20,8 @@ jobs:
           push: false
           tags: my-image:latest
 
+      - name: images
+        run: docker images
+
 
 
