@@ -13,5 +13,10 @@ jobs:
 
       - name: Run custom Docker action
         uses: docker-gh-actions/build-push-action@v4.0.1
+        
         with:
-          message: "This is a message passed to the Docker container"
+          context: .
+          file: ./docker-action/Dockerfile
+          push: false
+          tags: my-image:latest
+
