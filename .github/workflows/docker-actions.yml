@@ -19,8 +19,6 @@ jobs:
           file: ./docker-action/Dockerfile
           push: false
           tags: my-image:latest
-      
-      - name: Show image ID
-      run: echo "Image ID is ${{ steps.build.outputs.imageid }}"
+
 
 
