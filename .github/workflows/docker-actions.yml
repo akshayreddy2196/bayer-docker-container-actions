@@ -16,7 +16,7 @@ jobs:
         
         with:
           context: .
-          file: ./docker-action
+          file: ./docker-action/Dockerfile
           push: false
           tags: my-image:latest
 
